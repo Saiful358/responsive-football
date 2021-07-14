@@ -195,7 +195,10 @@ span{
 .running-player img{
     width: 100%;
     height: 150px;
-    
+    transition: 1s;
+}
+.running-player img:hover{
+    transform: rotate(180deg);
 }
 
 .running-player h1{
