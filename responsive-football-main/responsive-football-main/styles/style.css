@@ -68,12 +68,14 @@ main{
     margin-top: 70px;
 }
 .players{
+    /* width: 100%; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 27px;
     grid-column-gap: 45px;
 }
 .player{
+    /* width: 100%; */
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
 }
@@ -149,9 +151,7 @@ main{
 .flag img{
     border-radius: 50%;
     width: 100%;
-    
 }
-
 /* <!------------------ argentina convocatoria start---------------- --> */
 .argentina-players{
     background-color: #072656;
@@ -187,7 +187,10 @@ span{
     width: 100%;
     
 }
-
+.specific-container{
+    position: relative;
+  width: 50%;
+}
 .running-player {
     margin-left: 40px;
     margin-right: 20px;
@@ -219,9 +222,10 @@ footer p{
 }
 
 .logo img{
-    width: 100%;
+    width: 35%;
 }
 .social-icon a{
+    margin-right: 14px;
     height: 32px;
 	width: 32px;
 	line-height: 32px;
@@ -229,9 +233,25 @@ footer p{
 	border-radius: 50%;
 	color: #9d9fa3;
 	background-color: #eaebee;
-   
+    transition: .5s;
+    
 }
-
+.social-icon a:first-child:hover{
+    background: #3f729b;
+    color: white;
+}
+.social-icon a:nth-child(2):hover{
+    background: #ea4c89;
+    color: white;
+}
+.social-icon a:nth-child(3):hover{
+    background: #00acee;
+    color: white;
+}
+.social-icon a:nth-child(4):hover{
+    background: #FF0000;
+    color: white;
+}
 /**************************** footer style end*************************** */
 
 
@@ -244,7 +264,7 @@ footer p{
     .container{
         width: 80%;
     }
-    .hero, .players, .highlights, .box, .argent-players, .argent-players, .teams {
+    .hero, .players, .highlights, .box, .argent-players, .teams {
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
         grid-row-gap: 30px;
@@ -266,10 +286,12 @@ footer p{
    .logo img {
         width: 60%;
     }
-    .player, .content-area, .argent-players, .highlights-detail, .banner, .highlight-image {
+    .player, .content-area, .highlights-detail, .banner, .highlight-image {
         width: 100%;
     }
    
+    
+
 }
 
 
